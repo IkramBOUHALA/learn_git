@@ -1,0 +1,259 @@
+/* style for all pages */
+
+body {
+    padding: 0px;
+    margin: 0px;
+   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTounMSWRdtIl5_IxzHVIcL8i3omssOfurukQ&usqp=CAU);
+   background-size: cover;
+}
+
+/* style for navbar */
+.navbar {
+    align-items: center;
+    display: flex;
+   
+
+}
+
+.logo img {
+    margin-top: 9%;
+    margin-left: 7%;
+    width: 200px; 
+   
+}
+
+.nav-links {
+    list-style: none;
+    margin: auto;
+    padding: 0px;
+    display: flex;
+    gap: 30px;
+    font-style: italic;
+   
+}
+.nav-links li a{
+    display: inline;
+    color:rgb(171, 246, 246);
+    font-weight: bolder;
+    font-size: larger;
+}
+
+/* style for home page */
+.intro_donation {
+    position: relative;
+    left: 30%;
+    right: 30%;
+    top: 35%;
+    margin-right: 50%; 
+    font-weight: bold; 
+}
+.intro_donation h1{
+   color: #c0d555 
+}
+
+.intro_donation p {
+    line-height: 1.4;
+    text-align: justify;
+    font-size: large;
+}
+
+.types_donation {
+    position:relative;
+    transform: translate(50%);
+    left: 30%;
+    right: 30%;
+    margin-top: 5%; 
+    margin-right: 60%;
+    font-weight: bold;    
+}
+
+.types_donation h2 {
+    color: #c0d555 
+}
+
+.types_donation ul {
+    list-style-type:square;
+}
+
+.types_donation li {
+    line-height: 1.4;
+    text-align: justify;
+    font-size: large;  
+}
+
+.types_donation img {
+    transform: translate(-100%);  
+    margin-top: -35%;
+    width: 600px ;
+    
+    
+}
+
+/* style for the footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.724);
+    position: relative;
+    clear: both;
+    text-align: center;
+    color: aliceblue;
+}
+
+.Social ul {
+    list-style-type: none;
+}
+
+.Social a {
+    color: darkseagreen;
+    
+}
+
+/* style for about page  */
+aside {
+    position: relative;
+    width: 30%;
+    height: 29em;
+    float: right;
+    color:rgb(239, 239, 196)
+}
+
+main {
+    position: relative;
+    width: 70%;
+    height: 29em;
+    float: left;
+}
+
+iframe {
+    width: 100%;
+    height: 25em;   
+}
+
+.Importance h2 {
+    margin-left: 15%;
+    color:#c0d555 ;
+}
+
+.Importance p {
+    font-weight: bold;
+    margin-left: 15%;
+    font-size: larger;
+}
+
+.Importance li {
+    margin-left: 15%;
+    font-size: larger;  
+}
+
+/* style for work page  */
+.process p {
+    text-align: center;
+    font-size:xx-large;
+    font-weight: bold;
+    color: #c0d555;
+}
+
+.process1 {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+.tab table {
+ background-color: rgba(117, 117, 44, 0.902); 
+  border: 3px solid black;
+  border-collapse: collapse;
+  width: 60%;
+  height: 180px;
+  margin-left: 20%;
+}
+.tab th {
+    border: 3px solid black;
+    
+}
+
+.tab td {
+    border: 3px solid black;
+    background-color: beige;
+    text-align: center; 
+}
+
+.tab p {
+    text-align: center;
+    font-size:xx-large;
+    font-weight: bold;
+    color: #c0d555;
+}
+
+/* syle for resume page  */
+
+.res {
+    height: 21em;
+}
+
+.res h2 {
+    text-align: center;
+    color:#c0d555 ;
+}
+
+.res p {
+    text-align: justify;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-weight: bold;
+    font-size: large;
+}
+
+.res details {
+    margin-left: 30%;
+    margin-right: 30%;
+    font-weight: bold; 
+}
+
+.res a{
+    font-style: italic;
+    color:rgb(171, 246, 246);
+}
+
+/* style for contact page  */
+
+.contact {
+    height: 21em;
+}
+
+.contact h3 {
+    text-align: center;
+    color:rgba(0, 255, 255, 0.903);
+}
+
+form {
+    position: relative;
+    width: 30%;
+    margin: 0 auto;
+    padding: 1em;
+    box-sizing: border-box;
+    background-color: var(--tertiary-color)
+}
+
+label {
+    font-weight: bold;
+}
+
+.add input {
+    padding: 20px;
+ border-radius: 20px;
+}
+
+.click input {
+    padding: 5px;  
+    background-color: rgba(0, 255, 255, 0.477); 
+}
+
+
+
+
+
+
+
+
+
