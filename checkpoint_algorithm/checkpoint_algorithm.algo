@@ -1,0 +1,37 @@
+ALGORITHM reader_sentence
+VAR
+    s:STRING;
+    i:INTEGER :=0;
+    nb_v:INTEGER :=0;
+    nb_char: INTEGER :=0;
+    nb_w: INTEGER :=0;
+BEGIN
+REPEAT
+    write("whrite a sentence that end with point");
+    read(s);
+UNTIL (s[length-1]=".")
+    
+
+    FOR i FROM 0 TO length-1 STEP 1  DO
+        WHILE (s[i]<>".") DO
+            nb_char= nb_char + 1;
+        END_WHILE
+    END_FOR
+    whrite("This is the number of characters in this sentence: "nb_char);
+
+    FOR i FROM 0 TO length-1 STEP 1  DO
+        IF (s[i]=" " or s[i]=".") THEN
+            nb_w= nb_w + 1;
+        END_IF
+    END_FOR
+    whrite("This is the number of words in this sentence: "nb_w);
+
+    FOR i FROM 0 TO length-1 STEP 1  DO
+        IF (s[i]="a" or s[i]="e" or s[i]="u" or s[i]="i" or s[i]="o") THEN
+            nb_v= nb_v + 1;
+        END_IF
+    END_FOR
+    write("This is the number of vowels in this sentence: " nb_v);
+    
+    
+END
