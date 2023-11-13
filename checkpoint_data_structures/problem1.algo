@@ -1,0 +1,48 @@
+ALGORITHM array_sum
+VAR
+    i :INTEGER :=0;
+    j: INTEGER :=0;
+    k: INTEGER :=0;
+    sum : INTEGER :=0;
+    set1 : ARRAY_OF INTEGER[10];
+    set2: ARRAY_OF INTEGER[10];
+    set_sum: ARRAY_OF INTEGER[20];
+BEGIN
+    FOR i FROM 0 TO set1.length-1 STEP 1  DO
+        read(set1[i]);
+    END_FOR
+    FOR j FROM 0 TO set2.length-1 STEP 1  DO
+        read(set2[j]);
+    END_FOR
+
+    FOR i FROM 0 TO set1.length-1 STEP 1  DO
+        FOR j FROM 0 TO set2.length-1 STEP 1  DO
+            IF (set1[i]=set2[j]) THEN
+                breack;
+            ELSE_IF (set1[i]<>set2[j] and j=set2.length-1) THEN
+                sum= sum + 1;
+                set_sum[k]=set1[i];
+                k= k + 1;
+            END_IF
+            
+        END_FOR
+        
+    END_FOR
+    FOR j FROM 0 TO set2.length-1 STEP 1  DO
+        FOR i FROM 0 TO set1.length-1 STEP 1  DO
+            IF (set1[i]=set2[j]) THEN
+                breack;
+            ELSE_IF (set1[i]<>set2[j] and i=set1.length-1) THEN
+                sum= sum + 1;
+                set_sum[k]=set2[j];
+                k= k + 1;
+            END_IF
+            
+        END_FOR
+        
+    END_FOR
+
+    write("The sum of distinct elements is: "sum);
+    write("the new table of distinct elements "set_sum);
+
+END
