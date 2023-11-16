@@ -1,0 +1,29 @@
+ALGORITHM sorting
+VAR
+    i: INTEGER:=0;
+    j: INTEGER:=0;
+    tmp, nb: INTEGER;
+    tab: ARRAY_OF INTEGER[10];
+BEGIN
+    write("shoose a number");
+    read(nb);
+    FOR i FROM 0 TO tab.length-1 STEP 1  DO
+        FOR j FROM 0 TO tab.length-i-1 STEP 1  DO
+            IF (tab[j]>tab[j+1]) THEN
+                tmp=tab[j];
+                tab[j]=tab[j+1];
+                tab[j+1]=tmp;
+            END_IF
+        END_FOR
+    END_FOR
+
+    FOR i FROM 0 TO tab.length-1 STEP 1  DO
+            IF (tab[i]<nb and i=0) THEN
+                nb=tab[i];
+            ELSE_IF (tab[i]<nb and i<>0) THEN
+                nb=tab[i-1];
+            
+            END_IF
+        END_IF
+    END_FOR
+END
