@@ -1,0 +1,28 @@
+ALGORITHM palindrome
+VAR
+    i: INTEGER:=0;
+    j: INTEGER;
+    word: STRING;
+BEGIN
+    REPEAT
+        write("give a word");
+    UNTIL (word[]<>" ");
+    read(word[]);
+    j=word.length-1
+    IF (j=0) THEN
+        write("word containing a single character is a palindrome")
+    END_IF
+    IF (word[0]<>word[j] and j<>0) THEN
+        write("this is not a palindrome")
+    END_IF
+    FOR i FROM 0 TO word.length-1 STEP 1  DO
+        WHILE (word[i]=word[j] and i<>j and j>i) DO
+            j=j-1;
+        END_WHILE
+        IF (i=j or j<i) THEN
+            write("this is a palindrome")
+        ELSE
+            write("this is not a palindrome")
+        END_IF
+    END_FOR
+END
