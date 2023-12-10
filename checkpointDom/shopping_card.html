@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Shopping Cart with Quantity, Delete, and Heart</title>
+</head>
+<body>
+
+  <div class="product">
+    <h2>Product 1</h2>
+    <img src="photo1.jpg" alt="photo1">
+    <p>Price: $190</p>
+    <div class="quantity">
+      <button onclick="adjustQuantity('Product 1', 10, 1)">+</button>
+      <button onclick="adjustQuantity('Product 1', 10, -1)">-</button>
+    </div>
+    <button onclick="addToCart('Product 1', 10)">Add to Cart</button>
+    <span class="heart-button" onclick="toggleHeart(this)"></span>
+  </div>
+
+  <div class="product">
+    <h2>Product 2</h2>
+    <img src="photo2.webp" alt="photo2">
+    <p>Price: $250</p>
+    <div class="quantity">
+      <button onclick="adjustQuantity('Product 2', 20, 1)">+</button>
+      <button onclick="adjustQuantity('Product 2', 20, -1)">-</button>
+    </div>
+    <button onclick="addToCart('Product 2', 20)">Add to Cart</button>
+    <span class="heart-button" onclick="toggleHeart(this)"></span>
+  </div>
+
+  <div id="cart">
+    <h2>Your Cart</h2>
+    <ul id="cartItems"></ul>
+    <div id="cartTotal">Total: $0</div>
+  </div>
+
+  <script src="Main.js"></script>
+
+</body>
+</html>
