@@ -14,7 +14,7 @@ import User from './User';
 function App() {
   return (
     <>
-    <User/>
+    <User />
     <Card style={{ width: '18rem', marginLeft:'41%'}} bg="danger" data-bs-theme="dark" >
     <Image image= {Product.image} />
     <Card.Body>
